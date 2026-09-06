@@ -190,8 +190,67 @@
         </section>
         <section id="documentation">
             <h2>D5-D6 · System and Documentation</h2>
-            <p>Extend Module 1 patterns, then link your sources, asset credits/licenses, test record, transformation
-                notes, and AI disclosure.</p>
+
+            <h3>Design system and patterns</h3>
+            <p>This page extends the Module 1 pattern&#8217;s design system rather than creating a new one. The visual
+                language is set with a small set of CSS custom properties in <code>:root</code>: brand navy
+                (<code>--color-action</code>), Arizona gold accent (<code>--color-accent</code>), neutral text and
+                muted grays, and border/radius/spacing tokens for consistent cards and spacing across all sections.
+                Headers, lede, figure cards, responsive inline SVGs, and the accessible data table each reuse these
+                same tokens so the editorial figures and charts read as one coherent story piece.</p>
+
+            <h3>Illustrative versus narrative graphics</h3>
+            <p>Three purpose-built graphics support the story. <strong>Figure 1</strong> is an illustrative
+                (JavaScript-independent) reproduction of the EPA-hosted indoor water-use pie chart, saved as a raster
+                image in <code>assets/indoor-water-figure.jpg</code>. <strong>Figure 2</strong> and the
+                <strong>D4 responsive bar chart</strong> are hand-authored, accessible, inline SVGs (no image files,
+                fully scalable) that use the site&#8217;s colors and classes. The bar chart is explicitly responsive:
+                it uses a <code>viewBox</code> plus CSS <code>width:100%</code> so bars scale to the container.
+            </p>
+
+            <h3>Sources and asset credits</h3>
+            <ul>
+                <li>All narrative figures and chart values come from the U.S. EPA WaterSense fact sheet
+                    &#8220;Indoor Water Use in the United States,&#8221; hosted at the January 2017 snapshot
+                    (19january2017snapshot.epa.gov/www3/watersense/pubs/indoor.html).</li>
+                <li>Figures 1&#8217;s pie-chart breakdown is sourced, per that EPA fact sheet, to the American Water
+                    Works Association Research Foundation report &#8220;Residential End Uses of Water&#8221; (1999).
+                </li>
+                <li>WaterSense certification maxima in the D3 table (1.28 gal/flush, 2.0 gal/min, 1.5 gal/min) are
+                    EPA WaterSense program standards.</li>
+                <li>Figure 2&#8217;s &#8220;four bathtubs&#8221; analogy follows the story lead and commonly cited
+                    WaterSense outreach framing; it is an illustrative comparison rather than a measured fixture value.
+                </li>
+            </ul>
+
+            <h3>Transformation notes</h3>
+            <p>No statistical or data transformation was applied. Narrative figures follow the EPA&#8217;s own rounded
+                presentation (for example, the toilet&#8217;s 26.7 percent share is given as &#8220;about 27
+                percent&#8221; in the story). Annual savings figures in the D3 table are representative EPA estimates
+                for an average family and are flagged in the table&#8217;s source note as illustrative; actual savings
+                vary with household usage. Units use the shorthand &#8220;gal&#8221; per the source material.</p>
+
+            <h3>Accessibility and testing record</h3>
+            <ul>
+                <li>Responsive SVG graphics each include an internal <code>&lt;title&gt;</code> and
+                    <code>&lt;desc&gt;</code> plus <code>role="img"</code> and <code>aria-labelledby</code>.
+                </li>
+                <li>The data table uses a descriptive <code>&lt;caption&gt;</code>, <code>scope="col"</code> column
+                    headers, and <code>scope="row"</code> row headers, wrapped in a scrollable
+                    <code>role="region"</code> container for narrow screens.
+                </li>
+                <li>Color is supplemented by labels and text so no information depends on color alone.</li>
+                <li>Verified in the browser by manual inspection at desktop and narrow/tablet widths; each section and
+                    figure was reviewed after a hard-refresh cache check to confirm the latest markup was being served.
+                </li>
+            </ul>
+
+            <h3>AI disclosure</h3>
+            <p>This project was developed with the assistance of an AI coding assistant used for drafting page
+                structure, styling patterns, figure markup, and documentation text. All factual claims, figures, and
+                sourcing were reviewed and corroborated against the cited U.S. EPA WaterSense source material before
+                publication, and discrepancy notes (such as the illustrative bathtub analogy) are stated openly above.
+            </p>
         </section>
     </main>
 </body>

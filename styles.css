@@ -212,3 +212,26 @@ thead{
     font-weight: 700;
     fill: var(--color-action);
 }
+
+/* D5-D6 documentation section */
+#documentation ul {
+    margin: 0 0 1rem 1.25rem;
+}
+
+#documentation li {
+    margin-bottom: .5rem;
+}
+
+#documentation code {
+    background: #eeeaf0;
+    color: #7a1a3a;
+    padding: .1rem .3rem;
+    border-radius: .25rem;
+    font-size: .9em;
+}
+
+/* Sub-section headings inside a section */
+section h3 {
+    margin-top: 1.75rem;
+    margin-bottom: .5rem;
+}
