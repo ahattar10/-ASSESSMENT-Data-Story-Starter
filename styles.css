@@ -97,3 +97,58 @@ thead{
     stroke:var(--color-muted);
     stroke-width:8;
 }
+
+/* D4 responsive SVG bar chart */
+.story-graphic {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+.graphic-surface {
+    fill: #f7fafc;
+    stroke: none;
+}
+
+.graphic-axis {
+    stroke: #cbd5e1;
+    stroke-width: 2;
+}
+
+.label-fixture {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    fill: #1e3a5f;
+    font-weight: 600;
+}
+
+.label-value {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    fill: #334155;
+    font-weight: 500;
+}
+
+.bar {
+    fill: #94a3b8;
+}
+
+.bar.toilet {
+    fill: #0e5aa7;
+}
+
+.bar.shower {
+    fill: #2b8cbe;
+}
+
+.bar.faucet {
+    fill: #7db8d8;
+}
+
+.caption-svg {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    fill: #64748b;
+    font-style: italic;
+}
