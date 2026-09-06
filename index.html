@@ -95,14 +95,34 @@
         </section>
         <section id="vector-story">
             <h2>D4 · Responsive SVG</h2>
-            <svg class="story-graphic" viewBox="0 0 800 400" role="img" aria-labelledby="graphic-title graphic-desc">
-                <title id="graphic-title">Replace with a concise title</title>
-                <desc id="graphic-desc">Replace with an equivalent description of the meaningful comparison or pattern.
-                </desc>
-                <rect class="graphic-surface" width="800" height="400" />
-                <circle class="graphic-primary" cx="250" cy="200" r="120" />
-                <circle class="graphic-accent" cx="560" cy="160" r="150" />
-                <path class="graphic-line" d="M80 350H720" />
+            <svg class="story-graphic" viewBox="0 0 800 420" role="img" aria-labelledby="graphic-title graphic-desc">
+                <title id="graphic-title">Gallons used by common bathroom fixtures</title>
+                <desc id="graphic-desc">A horizontal bar chart comparing how much water typical bathroom fixtures use: a
+                    running bathroom faucet flows about 2 gallons per minute, a standard showerhead flows 2.5 gallons
+                    per minute, and an older toilet can use up to 7 gallons per flush.</desc>
+                <rect class="graphic-surface" width="800" height="420" />
+
+                <line class="graphic-axis" x1="260" y1="40" x2="260" y2="360" />
+
+                <g class="bar-row">
+                    <text class="label-fixture" x="250" y="110" text-anchor="end">Bathroom faucet (running)</text>
+                    <rect class="bar faucet" x="260" y="92" width="110" height="36" />
+                    <text class="label-value" x="778" y="116" text-anchor="end">2 gal / min</text>
+                </g>
+
+                <g class="bar-row">
+                    <text class="label-fixture" x="250" y="195" text-anchor="end">Standard showerhead</text>
+                    <rect class="bar shower" x="260" y="177" width="138" height="36" />
+                    <text class="label-value" x="778" y="201" text-anchor="end">2.5 gal / min</text>
+                </g>
+
+                <g class="bar-row">
+                    <text class="label-fixture" x="250" y="280" text-anchor="end">Older toilet</text>
+                    <rect class="bar toilet" x="260" y="262" width="385" height="36" />
+                    <text class="label-value" x="778" y="286" text-anchor="end">up to 7 gal / flush</text>
+                </g>
+
+                <text class="caption-svg" x="260" y="400">Source: U.S. EPA, WaterSense.</text>
             </svg>
         </section>
         <section id="documentation">
@@ -112,4 +132,5 @@
         </section>
     </main>
 </body>
+
 </html>
