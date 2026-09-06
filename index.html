@@ -56,9 +56,59 @@
                         WaterSense, "Indoor Water Use in the United States," after American Water Works Association
                         Research Foundation, "Residential End Uses of Water," 1999.</figcaption>
                 </figure>
-                <figure>
-                    <img src="placeholder.svg" alt="Replace with a contextual alternative" width="800" height="450">
-                    <figcaption>Replace with a visible caption and source/credit.</figcaption>
+                <figure class="waste-figure">
+                    <svg class="waste-graphic" viewBox="0 0 800 380" role="img"
+                        aria-labelledby="waste-title waste-desc">
+                        <title id="waste-title">One running toilet can waste about 200 gallons a day</title>
+                        <desc id="waste-desc">An illustration comparing one leaking toilet to four filled bathtubs. One
+                            running toilet silently wastes roughly 200 gallons per day — about the same volume of water
+                            it takes to fill four bathtubs.</desc>
+                        <rect class="graphic-surface" width="800" height="380" />
+
+                        <!-- Left: one running toilet, drawn in simple line style -->
+                        <g class="toilet-drawing">
+                            <text class="waste-label" x="150" y="50" text-anchor="middle">1 running toilet</text>
+                            <rect class="waste-stroke" x="110" y="90" width="80" height="70" rx="8" />
+                            <rect class="waste-stroke" x="100" y="150" width="100" height="14" rx="3" />
+                            <rect class="waste-stroke" x="150" y="60" width="14" height="32" rx="4" />
+                            <!-- drip droplets -->
+                            <circle class="waste-drip" cx="190" cy="110" r="8" />
+                            <circle class="waste-drip" cx="204" cy="132" r="6" />
+                            <circle class="waste-drip" cx="212" cy="158" r="5" />
+                        </g>
+
+                        <!-- Equals symbol -->
+                        <text class="waste-equals" x="300" y="150" text-anchor="middle">=</text>
+
+                        <!-- Right: four bathtub outlines -->
+                        <g class="bathtub-group">
+                            <g class="bathtub">
+                                <rect class="waste-stroke" x="360" y="105" width="80" height="40" rx="18" />
+                                <rect class="waste-water" x="366" y="110" width="68" height="28" rx="14" />
+                            </g>
+                            <g class="bathtub">
+                                <rect class="waste-stroke" x="455" y="105" width="80" height="40" rx="18" />
+                                <rect class="waste-water" x="461" y="110" width="68" height="28" rx="14" />
+                            </g>
+                            <g class="bathtub">
+                                <rect class="waste-stroke" x="360" y="175" width="80" height="40" rx="18" />
+                                <rect class="waste-water" x="366" y="180" width="68" height="28" rx="14" />
+                            </g>
+                            <g class="bathtub">
+                                <rect class="waste-stroke" x="455" y="175" width="80" height="40" rx="18" />
+                                <rect class="waste-water" x="461" y="180" width="68" height="28" rx="14" />
+                            </g>
+                            <text class="waste-caption" x="500" y="292" text-anchor="middle">≈ 4 filled bathtubs</text>
+                        </g>
+
+                        <!-- Bottom total -->
+                        <text class="waste-total" x="400" y="335" text-anchor="middle">≈ 200 gallons wasted per
+                            day</text>
+                    </svg>
+                    <figcaption>Figure 2. The silent waste adds up. A single running toilet can waste roughly 200
+                        gallons a day — about as much water as it takes to fill four bathtubs. The bathtub comparison
+                        follows the framing in the story lead. Source figure: U.S. EPA, WaterSense; bathtub-size
+                        analogy as commonly cited by WaterSense outreach materials.</figcaption>
                 </figure>
             </div>
         </section>

@@ -152,3 +152,63 @@ thead{
     fill: #64748b;
     font-style: italic;
 }
+
+/* D2 waste-figure: running toilet = four bathtubs */
+.waste-figure {
+    background: #f1f6fb;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: var(--space-3);
+}
+
+.waste-graphic {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.waste-figure .graphic-surface {
+    fill: transparent;
+}
+
+.waste-stroke {
+    fill: none;
+    stroke: #1e3a5f;
+    stroke-width: 4;
+}
+
+.waste-water {
+    fill: #2b8cbe;
+}
+
+.waste-drip {
+    fill: #2b8cbe;
+}
+
+.waste-label {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    fill: #1e3a5f;
+}
+
+.waste-equals {
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    fill: #1e3a5f;
+}
+
+.waste-caption {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    fill: #1e3a5f;
+}
+
+.waste-total {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    fill: var(--color-action);
+}
